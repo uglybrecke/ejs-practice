@@ -20,7 +20,7 @@
     <% if (['blue', 'red', 'yellow'].includes(person.favoriteColor.toLowerCase())) 
         { %>
         <p>What's not to love in a primary color!</p>
-    <% } if else(['green', 'orange', 'purple'].includes(person.favoriteColor.toLowerCase())) { %>
+    <% } else if (['green', 'orange', 'purple'].includes(person.favoriteColor.toLowerCase())) { %>
         <p>Combining two colors to get one better!</p>
     <% } else { %>
         <p>Way to get specific! You like what you like and that's great!</p>
