@@ -16,8 +16,9 @@ app.use(express.static('public'));
 //when we get a request for the home page or main address (/) show them 'home'
 app.get('/', (req, res) => {
 
-  res.render('home');
+    const person = { name: 'Donald Duck', occupation: 'plumber', favoriteColor: 'blue' };
 
+    res.render('home', { person });
 });
 
 //start at the port we said(listen), also print where we are in the console
