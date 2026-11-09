@@ -24,16 +24,13 @@ app.get('/', (req, res) => {
 // Define a friends "route" ('/friends')
 app.get('/friends', (req, res) => {
 
-
     const friends = [ 'Mickey', 'Goofy', 'Minnie', 'Daisy' ];
 
     res.render('friends', { friends });
-
 });
 
 // Define a movies "route" ('/movies')
 app.get('/movies', (req, res) => {
-
 
     const movies = [ 'Everything Everywhere All At Once', 'Gone Girl', 'Logan Lucky', 'RokkinRolla', 'Parasite', 'Conan the Barbarian', 'Fury Road', 'Pans Labyrinth' ];
 

@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include partials -->
+    <%- include('partials/header') %>
     <title>Friends</title>
 </head>
 <body>
-    <body>
-    <h1>Your friends:</h1>
-        <ul>
-            <% friends.forEach(friend=> { %>
-                <li><%= friend %></li>
-            <% }) %>
-        </ul>
-
-</body>
-    
+    <main>
+        <h1>Your friends:</h1>
+            <ul>
+                <% friends.forEach(friend=> { %>
+                    <li><%= friend %></li>
+                <% }) %>
+            </ul>
+    </main>
+    <%- include('partials/footer') %>
 </body>
 </html>

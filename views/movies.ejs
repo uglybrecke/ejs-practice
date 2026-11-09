@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include partials -->
+    <%- include('partials/header') %>
     <title>Movies</title>
 </head>
 <body>
-    <body>
-    <h1>My favorite movies:</h1>
-        <h2>(in no particular order)</h2>
-        <ul>
-            <% movies.forEach(movie=> { %>
-                <li><%= movie %></li>
-            <% }) %>
-        </ul>
-
-</body>
-    
+    <main>
+        <h1>My favorite movies:</h1>
+            <h2>(in no particular order)</h2>
+            <ul>
+                <% movies.forEach(movie=> { %>
+                    <li><%= movie %></li>
+                <% }) %>
+            </ul>
+    </main>
+    <%- include('partials/footer') %>    
 </body>
 </html>
